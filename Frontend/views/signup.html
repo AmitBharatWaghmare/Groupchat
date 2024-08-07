@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/css/signup.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+  
+  <form onsubmit="signUp(event)" id="signup-form">
+        <h4>Signup </h4>
+    <label for="name">Name:</label>
+    <input type="text" id="username" name="username" placeholder="Enter Name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" required id="signupEmail" name="signupEmail" placeholder="Enter Email" required><br>
+
+    <label for="signupPhone">Phone Number:</label>
+    <input type="tel" required id="signupPhone" name="signupPhone" placeholder="Phone Number:" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" required id="signupPassword" name="signupPassword" placeholder="Enter Password" required><br>
+ 
+      <button type="submit">sign up</button><br><br>
+      <h6>Already have account ? <a href="../views/login.html"> Login</a><h6>
+  
+</form>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script defer src="../public/js/signup.js"></script>
+</body>
+</html>
